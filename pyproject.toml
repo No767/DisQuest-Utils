@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "disquest-utils"
-version = "1.0.2"
+version = "1.0.3"
 description = "A set of async utils for Miku's DisQuest Cog"
 authors = ["No767 <73260931+No767@users.noreply.github.com>"]
 license = "Apache-2.0"
@@ -22,7 +22,7 @@ classifiers = [
 include = ["license"]
 packages = [{ include = "disquest_utils", from = "src" }]
 [tool.poetry.dependencies]
-python = "^3.7,<3.11"
+python = "^3.7,<4.0"
 python-dotenv = "^0.20.0"
 SQLAlchemy = "^1.4.36"
 uvloop = "^0.16.0"

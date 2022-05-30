@@ -3,7 +3,8 @@
 
 # DisQuest-Utils
 
-![PyPI](https://img.shields.io/pypi/v/disquest-utils?label=PyPi&logo=pypi&logoColor=white) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/disquest-utils?label=Python&logo=python&logoColor=white)![PyPI - License](https://img.shields.io/pypi/l/disquest-utils?label=License&logo=github&logoColor=white)
+![PyPI](https://img.shields.io/pypi/v/disquest-utils?label=PyPi&logo=pypi&logoColor=white) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/disquest-utils?label=Python&logo=python&logoColor=white)
+![PyPI - License](https://img.shields.io/pypi/l/disquest-utils?label=License&logo=github&logoColor=white)
 
 A set of async utils for DisQuest
 

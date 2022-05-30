@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "disquest-utils"
-version = "1.0.3"
+version = "1.0.4"
 description = "A set of async utils for Miku's DisQuest Cog"
 authors = ["No767 <73260931+No767@users.noreply.github.com>"]
 license = "Apache-2.0"

@@ -19,6 +19,23 @@ class DisQuestUsers:
     def __init__(self):
         self.self = self
 
+    async def initTables(self):
+        meta = MetaData()
+        engineInit = create_async_engine(
+            f"postgresql+asyncpg://{USER}:{PASSWORD}@{IP}:{PORT}/{DATABASE}"
+        )
+        Table(
+            "users",
+            meta,
+            Column("id", BigInteger),
+            Column("gid", BigInteger),
+            Column("xp", Integer),
+        )
+        async with engineInit.begin() as connInit:
+            connInit.run_sync(meta.create_all)
+
+    asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
+    
     async def getxp(self, uid: int, gid: int):
         meta = MetaData()
         engine = create_async_engine(

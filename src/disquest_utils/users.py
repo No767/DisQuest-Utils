@@ -32,7 +32,7 @@ class DisQuestUsers:
             Column("xp", Integer),
         )
         async with engineInit.begin() as connInit:
-            connInit.run_sync(meta.create_all)
+            await connInit.run_sync(meta.create_all)
 
     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
     

@@ -16,34 +16,17 @@ DisQuest is an base system for storing and giving users on Discord xp. This is j
 
 # Installing
 
-Pip:
 
-    With Asyncpg (default):
+With Asyncpg (default):
 
-    ```sh
-    pip install disquest-utils
-    ```
+```sh
+pip install disquest-utils
+```
+With Asyncmy:
 
-    With Asyncmy:
-
-    ```sh
-    pip install disquest-utils[asyncmy]
-    ```
-
-
-Poetry:
-
-    With Asyncpg (default):
-
-    ```sh
-    poetry install disquest-utils
-    ```
-
-    With Asyncmy:
-
-    ```sh
-    poetry install disquest-utils -E "asyncmy"
-    ```
+```sh
+pip install disquest-utils[asyncmy]
+```
 
 # URI Connections
 
@@ -51,14 +34,14 @@ DisQuest-Utils accepts URI connections in order to connection to the database. I
 
 Asyncpg:
 
-    ```py
-    CONNECTION_URI = "postgresql+asyncpg://user:password@host:port/dbname[?key=value&key=value...]"
-    ```
+```python
+CONNECTION_URI = "postgresql+asyncpg://user:password@host:port/dbname[?key=value&key=value...]"
+```
 
 Asyncmy:
 
-    ```py
-    CONNECTION_URI = "mysql+asyncmy://user:password@host:port/dbname[?key=value&key=value...]"
-    ```
+```python
+CONNECTION_URI = "mysql+asyncmy://user:password@host:port/dbname[?key=value&key=value...]"
+```
 
 Now pass the variable `CONNECTION_URI` as the uri arg of any method, and you should be ready to go
